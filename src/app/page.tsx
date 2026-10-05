@@ -31,12 +31,6 @@ export default function Home() {
         />
 
         <div className="relative z-10 mx-auto max-w-3xl text-center space-y-8">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 rounded-full border border-indigo-200/80 bg-indigo-50/80 px-4 py-1.5 text-xs font-semibold text-indigo-700 backdrop-blur-xs dark:border-indigo-900/60 dark:bg-indigo-950/60 dark:text-indigo-300">
-            <span className="flex h-2 w-2 rounded-full bg-indigo-500 animate-pulse" />
-            <span>Guia Vocacional para Estudantes de TI</span>
-          </div>
-
           {/* Main Hero Heading */}
           <div className="space-y-4">
             <h1 className="text-4xl sm:text-6xl font-black tracking-tight leading-[1.1]">
@@ -179,8 +173,9 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-zinc-200/80 dark:border-zinc-800/80 py-6 text-center text-xs text-zinc-500 dark:text-zinc-400">
-        <p>TechCareerPath &bull; Árvore de Decisão Vocacional em Tecnologia</p>
+        <p>Made by &bull; <a className="cursor-pointer hover:text-indigo-500 dark:hover:text-indigo-500 transition-colors" href="https://github.com/lucal22/career-choice" target="_blank" rel="noopener noreferrer">Lucal</a></p>
       </footer>
     </div>
   );
 }
+

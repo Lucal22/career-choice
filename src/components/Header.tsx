@@ -45,7 +45,7 @@ export function Header({ showReset = false, onReset }: HeaderProps) {
           </div>
           <div className="flex flex-col">
             <span className="font-semibold tracking-tight text-zinc-900 dark:text-zinc-50 leading-tight">
-              TechCareer<span className="text-indigo-600 dark:text-indigo-400">Path</span>
+              Career <span className="text-indigo-600 dark:text-indigo-400">Choice</span>
             </span>
             <span className="text-[11px] text-zinc-500 dark:text-zinc-400 leading-none">
               Árvore de Decisão
@@ -78,12 +78,6 @@ export function Header({ showReset = false, onReset }: HeaderProps) {
             </button>
           )}
 
-          <Link
-            href="/"
-            className="text-xs font-medium text-zinc-600 hover:text-indigo-600 dark:text-zinc-400 dark:hover:text-indigo-400 transition-colors"
-          >
-            Início
-          </Link>
         </div>
       </div>
     </header>
