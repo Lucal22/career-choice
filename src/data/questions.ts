@@ -3,37 +3,37 @@ import { DecisionTree } from "@/lib/types";
 export const questions: DecisionTree = {
   P1: {
     id: "P1",
-    question: "Prefere colocar a mão na massa e escrever código de software?",
+    question: "Você prefere colocar a mão na massa e trabalhar com código?",
     sim: { next: "P2_A" },
     nao: { next: "P2_B" },
   },
   P2_A: {
     id: "P2_A",
-    question: "O teu foco principal é a criação direta de aplicações?",
+    question: "Seu foco principal é a criação direta de aplicações?",
     sim: { next: "P3_A2" },
     nao: { next: "P3_A1" },
   },
   P2_B: {
     id: "P2_B",
-    question: "O teu objetivo envolve liderança de pessoas e negócios?",
+    question: "Seu objetivo envolve liderança de pessoas e negócios?",
     sim: { next: "P3_B1" },
     nao: { next: "P3_B2" },
   },
   P3_A1: {
     id: "P3_A1",
-    question: "Quer focar a tua carreira na área de dados?",
+    question: "Você quer focar sua carreira na área de dados?",
     sim: { next: "P4_A1a" },
     nao: { next: "P4_A1b" },
   },
   P3_A2: {
     id: "P3_A2",
-    question: "O teu objetivo é construir novos sistemas em vez de testar e proteger existentes?",
+    question: "Seu objetivo é construir novos sistemas em vez de testar e proteger existentes?",
     sim: { next: "P3_A2_Dev" },
     nao: { next: "P4_A2b_QA" },
   },
   P3_A2_Dev: {
     id: "P3_A2_Dev",
-    question: "Gosta mais de desenvolver para web do que para celulares?",
+    question: "Você gosta mais de desenvolver para web do que para celulares?",
     sim: { next: "P4_A2a" },
     nao: {
       career: "Desenvolvedor Mobile",
@@ -41,27 +41,27 @@ export const questions: DecisionTree = {
       roadmap: "https://roadmap.sh/android",
       subjects: [
         "Programação para Dispositivos Móveis",
-        "Programação Orientada a Objetos I / II",
+        "Programação Orientada a Objetos",
         "Interface Humano Computador",
-        "Engenharia de Software I"
+        "Engenharia de Software"
       ]
     },
   },
   P3_B1: {
     id: "P3_B1",
-    question: "Pretende fazer concurso público?",
+    question: "Você pretende fazer concurso público?",
     sim: { next: "P4_B1a" },
     nao: { next: "P4_B1b" },
   },
   P3_B2: {
     id: "P3_B2",
-    question: "Se interessa mais por melhorar a experiência do usuário?",
+    question: "Você se interessa mais por melhorar a experiência do usuário?",
     sim: { next: "P4_B2a" },
     nao: { next: "P4_B2b" },
   },
   P4_A1a: {
     id: "P4_A1a",
-    question: "Gostas de criar algoritmos que aprendem e preveem cenários futuros?",
+    question: "Você gosta de criar algoritmos que aprendem e preveem cenários futuros?",
     sim: {
       career: "Cientista de Dados e Inteligência Artificial",
       description: "Focado na criação de algoritmos de aprendizado de máquina, estatística avançada e modelos preditivos.",
@@ -69,8 +69,8 @@ export const questions: DecisionTree = {
       subjects: [
         "Inteligência Artificial",
         "Probabilidade e Estatística",
-        "Algoritmos e Estrutura de Dados I / II",
-        "Cálculo Diferencial e Integral I"
+        "Algoritmos e Estrutura de Dados",
+        "Cálculo Diferencial e Integral"
       ]
     },
     nao: {
@@ -78,25 +78,25 @@ export const questions: DecisionTree = {
       description: "Focado na gestão, estruturação e armazenamento eficiente e seguro de bancos de dados relacionais e não relacionais.",
       roadmap: "https://roadmap.sh/data-engineer",
       subjects: [
-        "Banco de Dados I / II",
+        "Banco de Dados",
         "Governança e Gestão da Informação",
         "Sistemas Operacionais",
-        "Redes de Computadores I"
+        "Redes de Computadores"
       ]
     },
   },
   P4_A1b: {
     id: "P4_A1b",
-    question: "A tua prioridade é resolver problemas complexos de estrutura de dados?",
+    question: "Sua prioridade é resolver problemas complexos de estrutura de dados?",
     sim: {
       career: "Engenheiro de Software",
       description: "Voltado para a resolução de problemas complexos de lógica, otimização e algoritmos de alto desempenho.",
       roadmap: "https://roadmap.sh/software-design-architecture",
       subjects: [
-        "Engenharia de Software I / II",
+        "Engenharia de Software",
         "Projeto e Análise de Algoritmos",
-        "Algoritmos e Estrutura de Dados I / II",
-        "Programação Orientada a Objetos I / II"
+        "Algoritmos e Estrutura de Dados",
+        "Programação Orientada a Objetos"
       ]
     },
     nao: {
@@ -105,7 +105,7 @@ export const questions: DecisionTree = {
       roadmap: "https://roadmap.sh/system-design",
       subjects: [
         "Sistemas Distribuídos",
-        "Redes de Computadores I",
+        "Redes de Computadores",
         "Sistemas Operacionais",
         "Arquitetura e Organização de Computadores"
       ]
@@ -113,7 +113,7 @@ export const questions: DecisionTree = {
   },
   P4_A2a: {
     id: "P4_A2a",
-    question: "Prefere desenvolver uma parte específica do que todas as partes da aplicação?",
+    question: "Você prefere desenvolver uma parte específica do que todas as partes da aplicação?",
     sim: { next: "P5_A2a" },
     nao: {
       career: "Desenvolvedor Web Fullstack",
@@ -121,24 +121,24 @@ export const questions: DecisionTree = {
       roadmap: "https://roadmap.sh/full-stack",
       subjects: [
         "Programação WEB",
-        "Programação Orientada a Objetos I / II",
-        "Banco de Dados I",
+        "Programação Orientada a Objetos",
+        "Banco de Dados",
         "Interface Humano Computador",
-        "Engenharia de Software I"
+        "Engenharia de Software"
       ]
     },
   },
   P4_A2b_QA: {
     id: "P4_A2b_QA",
-    question: "A tua prioridade é a prevenção de falhas e automação de testes?",
+    question: "Sua prioridade é a prevenção de falhas e automação de testes?",
     sim: {
       career: "Engenheiro de Testes e Garantia de Qualidade (QA)",
       description: "Focado no planejamento de testes, automação de verificações e prevenção de falhas em código.",
       roadmap: "https://roadmap.sh/qa",
       subjects: [
         "Qualidade de Software",
-        "Engenharia de Software I / II",
-        "Programação Orientada a Objetos I / II"
+        "Engenharia de Software",
+        "Programação Orientada a Objetos"
       ]
     },
     nao: {
@@ -146,7 +146,7 @@ export const questions: DecisionTree = {
       description: "Focado em proteção de dados, mitigação de vulnerabilidades e conformidade de rede/sistemas.",
       roadmap: "https://roadmap.sh/cyber-security",
       subjects: [
-        "Redes de Computadores I",
+        "Redes de Computadores",
         "Sistemas Operacionais",
         "Sistemas Distribuídos",
         "Ética e Legislação"
@@ -155,25 +155,25 @@ export const questions: DecisionTree = {
   },
   P4_B1a: {
     id: "P4_B1a",
-    question: "O teu objetivo principal é atuar como docente e pesquisador?",
+    question: "Você quer atuar como docente e pesquisador?",
     sim: {
       career: "Professor Universitário",
       description: "Focado na docência de ensino superior, pesquisa científica e inovação tecnológica.",
-      roadmap: "https://www.nature.com/articles/d41586-019-03063-x",
+      roadmap: "https://www.jusbrasil.com.br/artigos/como-iniciar-na-carreira-de-professor-universitario-e-a-importancia-do-mestrado-doutorado-e-da-formacao-continua/5064217986",
       subjects: [
         "Métodos e Técnicas de Pesquisa",
         "Projeto e Análise de Algoritmos",
-        "Algoritmos e Estrutura de Dados I / II"
+        "Algoritmos e Estrutura de Dados"
       ]
     },
     nao: {
       career: "Profissional de TI em Concursos Públicos (Perito / Analista de Tribunais / Auditor)",
       description: "Atua em órgãos estatais como perito criminal, analista judiciário de tribunais ou auditor fiscal de TI.",
-      roadmap: "https://blog.grancursosonline.com.br/carreira-ti-concursos-publicos/",
+      roadmap: "https://concursos.estrategia.com/portal/como-estudar-para-concursos-de-ti/",
       subjects: [
         "Ética e Legislação",
-        "Redes de Computadores I",
-        "Banco de Dados I",
+        "Redes de Computadores",
+        "Banco de Dados",
         "Governança e Gestão da Informação",
         "Sistemas Operacionais"
       ]
@@ -181,40 +181,40 @@ export const questions: DecisionTree = {
   },
   P4_B1b: {
     id: "P4_B1b",
-    question: "Se interessa em ter o próprio negócio?",
+    question: "Você se interessa em ter o próprio negócio?",
     sim: {
       career: "Empreendedor / Gestor de Startups",
       description: "Voltado para a fundação e gestão de novos negócios inovadores e baseados em tecnologia.",
-      roadmap: "https://www.ycombinator.com/library",
+      roadmap: "https://www.sebraeplay.com.br/content/introducao-ao-empreendedorismo-primeiros-passos-para-empreender",
       subjects: [
         "Empreendedorismo",
         "Contabilidade",
-        "Princípios da Administração I / II",
+        "Princípios da Administração",
         "Gestão de Projetos"
       ]
     },
     nao: {
       career: "Analista / Gerente de Projetos de TI",
       description: "Focado na liderança de equipes, cronogramas, orçamentos e aplicação de metodologias ágeis.",
-      roadmap: "https://roadmap.sh/project-manager",
+      roadmap: "https://roadmap.sh/",
       subjects: [
         "Gestão de Projetos",
         "Governança e Gestão da Informação",
-        "Engenharia de Software II",
-        "Princípios da Administração I"
+        "Engenharia de Software",
+        "Princípios da Administração"
       ]
     },
   },
   P4_B2a: {
     id: "P4_B2a",
-    question: "Gostas de desenhar telas, fluxos e o visual dos sistemas?",
+    question: "Você gosta de desenhar telas, fluxos e o visual dos sistemas?",
     sim: {
       career: "Designer / Analista de Experiência do Usuário (UX/UI)",
       description: "Focado no mapeamento da jornada do usuário, criação de protótipos e design visual de interfaces.",
       roadmap: "https://roadmap.sh/ux-design",
       subjects: [
         "Interface Humano Computador",
-        "Engenharia de Software I",
+        "Engenharia de Software",
         "Métodos e Técnicas de Pesquisa"
       ]
     },
@@ -223,8 +223,8 @@ export const questions: DecisionTree = {
       description: "Focado em traduzir necessidades de negócio em especificações técnicas e priorizar o backlog do produto.",
       roadmap: "https://roadmap.sh/product-manager",
       subjects: [
-        "Engenharia de Software I / II",
-        "Princípios da Administração I",
+        "Engenharia de Software",
+        "Princípios da Administração",
         "Gestão de Projetos",
         "Governança e Gestão da Informação"
       ]
@@ -232,15 +232,15 @@ export const questions: DecisionTree = {
   },
   P4_B2b: {
     id: "P4_B2b",
-    question: "Gostas de analisar relatórios para tomada de decisões executivas?",
+    question: "Você gosta de analisar dados para tomada de decisões executivas?",
     sim: {
       career: "Analista de Negócios (Business Analyst)",
       description: "Voltado para a análise de relatórios executivos, apoio à decisão e otimização de processos organizacionais.",
-      roadmap: "https://roadmap.sh/business-intelligence",
+      roadmap: "https://roadmap.sh/bi-analyst",
       subjects: [
         "Sistemas de Apoio à Decisão",
         "Governança e Gestão da Informação",
-        "Princípios da Administração I / II"
+        "Princípios da Administração"
       ]
     },
     nao: {
@@ -248,7 +248,7 @@ export const questions: DecisionTree = {
       description: "Atua na manutenção de infraestrutura física, redes corporativas e suporte operacional a sistemas.",
       roadmap: "https://roadmap.sh/devops",
       subjects: [
-        "Redes de Computadores I",
+        "Redes de Computadores",
         "Arquitetura e Organização de Computadores",
         "Sistemas Operacionais"
       ]
@@ -256,7 +256,7 @@ export const questions: DecisionTree = {
   },
   P5_A2a: {
     id: "P5_A2a",
-    question: "O teu foco principal é a interface visual no navegador?",
+    question: "Você foca na interface visual no navegador?",
     sim: {
       career: "Desenvolvedor Frontend",
       description: "Focado na construção da interface visual, estilos e experiência interativa no navegador.",
@@ -264,8 +264,8 @@ export const questions: DecisionTree = {
       subjects: [
         "Programação WEB",
         "Interface Humano Computador",
-        "Programação Orientada a Objetos I / II",
-        "Algoritmos e Estrutura de Dados I / II"
+        "Programação Orientada a Objetos",
+        "Algoritmos e Estrutura de Dados"
       ]
     },
     nao: {
@@ -273,9 +273,9 @@ export const questions: DecisionTree = {
       description: "Focado na lógica de servidor, construção de APIs, regras de negócio e integração com banco de dados.",
       roadmap: "https://roadmap.sh/backend",
       subjects: [
-        "Programação Orientada a Objetos I / II",
-        "Banco de Dados I",
-        "Algoritmos e Estrutura de Dados I / II",
+        "Programação Orientada a Objetos",
+        "Banco de Dados",
+        "Algoritmos e Estrutura de Dados",
         "Programação WEB"
       ]
     },
